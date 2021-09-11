@@ -1,0 +1,373 @@
+/*==== START OF COMMON CSS ====*/
+/*  font-family: 'Actor', sans-serif; 
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Francois One', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+
+* {
+    margin: 00;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.clr {
+    clear: both;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+}
+
+:root {
+    --active-theme-color: var(--theme-color-5);
+
+    --theme-color: #ff4654;
+    --theme-color-2: #ff8189;
+    --theme-color-3: #9c000d;
+    --theme-color-4: #ff172b;
+
+    --theme-color-5: #0504aa;
+    --theme-color-6: #000036;
+    --dark-color: #101822;
+
+    --strong-font: 'Francois One', sans-serif;
+    --regular-font: 'Rubik', sans-serif;
+}
+
+.theme_button{
+    font-size: 18px;
+    font-family: var(--regular-font);
+    background-color: var(--theme-color-5);
+    color: #fff;
+    padding: 10px 13px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.theme_button:hover{
+    color: #fff;
+    background: var(--theme-color-6);
+}
+
+/*==== END OF COMMON CSS ====*/
+
+/*===================================== BASE START =====================================*/
+
+.single_contest {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background: #fff;
+    margin-bottom: 30px;
+}
+
+.contest_text p {
+	width: 49%;
+	display: inline-block !important;
+}
+
+.single_contest .contest_text {
+    padding: 10px 15px 0 15px;
+}
+
+.single_contest .contest_text p {
+    display: block;
+}
+
+.single_contest .contest_text .half_text {
+    display: inline-block;
+    width: 49%;
+    margin: 0;
+    padding: 0;
+}
+
+.single_contest .contest_img {
+    height: 180px;
+    overflow: hidden;
+    position: relative;
+}
+
+.single_contest .contest_img .contest_verified {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.single_contest .contest_img .contest_verified p {
+    background: #fff;
+    color: var(--theme-color-5);
+    padding: 7px 12px;
+    border-radius: 20px;
+    margin: 5px 5px;
+    text-transform: uppercase;
+}
+
+.single_contest .contest_text p {
+    font-size: 16px;
+    font-family: var(--regular-font);
+}
+
+.single_contest .context_button {
+    text-align: center;
+}
+
+.single_contest .contest_text h3{
+    font-size: 22px;
+    font-family: var(--regular-font);
+    text-transform: capitalize;
+}
+
+.more_contest{
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+}
+
+.more_contest a{
+    font-size: 14px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+
+
+
+
+
+.section_head{
+    position: relative;
+}
+
+
+.section_head h2 {
+	font-size: 90px;
+	font-family: var(--strong-font);
+	text-transform: uppercase;
+	position: absolute;
+	color: rgba(0, 0, 0, 0.1);
+	top: -2px;
+	left: -5px;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+}
+
+.section_head h3{
+    font-size: 32px;
+    font-family: var(--strong-font);
+    text-transform: uppercase;
+}
+
+/*====================================== BASE END ======================================*/
+
+/*================ NAVBAR START ================*/
+
+nav {
+    /* background-color: var(--theme-color); */
+    background-image: linear-gradient(to right, #0504aa, #000036);
+    color: #fff;
+}
+
+.dropdown-item {
+    color: var(--dark-color) !important;
+}
+
+.profile_cover{
+    height: 35px;
+    width: 35px;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    text-align: center;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.profile_cover img {
+    height: 35px;
+    width: 35px;
+    overflow: visible;
+}
+
+.nav-item a {
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+
+
+/*================= NAVBAR END =================*/
+/*================= BANNER START =================*/
+.banner_overlay h1{
+    font-size: 32px;
+    color: #fff;
+    font-family: var(--strong-font);
+    text-align: center;
+    /* text-transform: uppercase; */
+}
+.banner_overlay h2{
+    font-size: 32px;
+    color: #fff;
+    font-family: var(--strong-font);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.banner_overlay p{
+    font-size: 18px;
+    color: #fff;
+    font-family: var(--regular-font);
+    padding: 0 15px;
+}
+
+.banner_area {
+    background-image: url("../images/back3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* position: relative; */
+}
+
+.banner_overlay{
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.banner_img img{
+    height: 130px;
+    height: 130px;
+}
+
+/*================== BANNER END ==================*/
+
+
+
+
+
+/*===========================================  USER VERIFY PAGE START  ======================================*/
+
+/* LOGIN AND REGISTER START */
+
+.login_user.none {
+    visibility: hidden;
+}
+
+.reg_user.none {
+    visibility: hidden;
+}
+
+
+#login_account,
+#reg_account {
+    width: fill;
+    text-align: right;
+}
+
+#login_account,
+#reg_account:hover {
+    cursor: pointer;
+}
+
+.user_verify {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.user_login .user_verify {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.user_login .form-group label {
+    font-size: 15px;
+    margin-bottom: 0;
+    font-family: var(--regular-font);
+}
+
+.user_login .form-group input {
+    font-family: var(--regular-font);
+    font-size: 18px;
+}
+
+.user_login .form-group small {
+    font-family: var(--regular-font);
+}
+
+.user_login .user_verify h2 {
+    text-align: center;
+    font-family: var(--strong-font);
+    font-size: 32px;
+}
+
+.user_login button {
+    font-family: var(--regular-font);
+    background-color: var(--active-theme-color);
+    border: none;
+    padding: 10px 20px;
+}
+
+.user_login button:hover {
+    background-color: var(--active-theme-color);
+}
+
+
+/* LOGIN AND REGISTER END */
+
+/*===========================================  USER VERIFY PAGE END  ======================================*/
